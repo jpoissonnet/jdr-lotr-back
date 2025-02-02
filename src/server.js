@@ -135,7 +135,7 @@ const start = async () => {
           error,
         );
       });
-    await app.listen({ port: 8080 });
+    await app.listen({ host:'0.0.0.0', port: 8080 });
     console.log(
       "Serveur Fastify lancé sur " + chalk.blue("http://localhost:3000"),
     );
